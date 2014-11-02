@@ -1,0 +1,14 @@
+{
+  "name":    "blog",
+  "version": "0.0.1",
+  "author":  "Romain  Gautier <mail@romain.sh>",
+  "license": "MIT",
+
+  "dependencies": {
+    "bower": "^1.3.12"
+  },
+
+  "devDependencies": {
+    "gulp": "^3.8.9"
+  }
+}

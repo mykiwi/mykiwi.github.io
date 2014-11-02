@@ -1,0 +1,16 @@
+/web/bundles/
+/app/config/parameters.yml
+/var/bootstrap.php.cache
+/var/SymfonyRequirements.php
+/var/cache/*
+/var/logs/*
+!var/cache/.gitkeep
+!var/logs/.gitkeep
+/build/
+/vendor_backend/
+/vendor_frontend/
+/bin/*
+!bin/console
+!bin/symfony_requirements
+/composer.phar
+/node_modules/
