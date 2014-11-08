@@ -43,7 +43,8 @@
             "npm update",
             "node_modules/.bin/bower update",
             "node_modules/.bin/gulp"
-        ]
+        ],
+        "clean": "node_modules/.bin/gulp clean && rm -rf node_modules && rm -rf vendor_backend && rm -rf vendor_frontend"
     },
     "config": {
         "vendor-dir": "vendor_backend",
