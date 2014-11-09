@@ -23,8 +23,7 @@ gulp.task('css', function() {
       .pipe(sass())
       .pipe(concat('all.css'))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('web/build'))
-    .pipe(livereload());
+    .pipe(gulp.dest('web/build'));
 });
 
 gulp.task('js', function() {
@@ -34,22 +33,20 @@ gulp.task('js', function() {
       .pipe(uglify())
       .pipe(concat('all.min.js'))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('web/build'))
-    .pipe(livereload());
+    .pipe(gulp.dest('web/build'));
 });
 
 gulp.task('img', function() {
   return gulp.src(paths.images)
     .pipe(imagemin({optimizationLevel: 5}))
-    .pipe(gulp.dest('web/build/img'))
-    .pipe(livereload());
+    .pipe(gulp.dest('web/build/img'));
 });
 
 gulp.task('watch', function() {
   livereload.listen();
-  gulp.watch(paths.stylesheets, ['css']);
-  gulp.watch(paths.javascripts, ['js']);
-  gulp.watch(paths.images,      ['img']);
+  gulp.watch(paths.stylesheets, ['css']).on('change', livereload.changed);
+  gulp.watch(paths.javascripts, ['js']).on('change', livereload.changed);
+  gulp.watch(paths.images, ['img']).on('change', livereload.changed);
 });
 
 gulp.task('default', ['js', 'css', 'img', 'watch']);
