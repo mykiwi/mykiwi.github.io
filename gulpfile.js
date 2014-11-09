@@ -7,10 +7,14 @@ var gulp       = require('gulp'),
     del        = require('del'),
     livereload = require('gulp-livereload');
 
+var asset = 'app/Resources/public/';
+var view  = 'app/Resources/views/';
+
 var paths = {
-    stylesheets : 'app/Resources/public/scss/**/*.scss',
-    javascripts : 'app/Resources/public/js/**/*.js',
-    images      : 'app/Resources/public/img/**/*'
+    stylesheets : asset + 'scss/**/*.scss',
+    javascripts : asset + 'js/**/*.js',
+    images      : [asset + 'img/**/*.png', asset + 'img/**/*.jpg',asset + 'img/**/*.gif'],
+    templates   : view + '**/*.html.twig'
 };
 
 gulp.task('clean', function(cb) {
@@ -47,6 +51,7 @@ gulp.task('watch', function() {
   gulp.watch(paths.stylesheets, ['css']).on('change', livereload.changed);
   gulp.watch(paths.javascripts, ['js']).on('change', livereload.changed);
   gulp.watch(paths.images, ['img']).on('change', livereload.changed);
+  gulp.watch(paths.templates).on('change', livereload.changed);
 });
 
-gulp.task('default', ['js', 'css', 'img', 'watch']);
+gulp.task('default', ['js', 'css', 'img']);
