@@ -1,0 +1,8 @@
+body {
+    background: url(./img/background/shattered.png);
+
+    @media screen and (-webkit-min-device-pixel-ratio: 2) {
+        background: url(./img/background/shattered_@2X.png);
+        background-size: 500px 500px;
+    }
+}
