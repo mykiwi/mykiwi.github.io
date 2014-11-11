@@ -8,13 +8,15 @@ var gulp       = require('gulp'),
     del        = require('del'),
     livereload = require('gulp-livereload');
 
-var asset = 'app/Resources/public/';
-var view  = 'app/Resources/views/';
+var asset  = 'app/Resources/public/';
+var view   = 'app/Resources/views/';
+var vendor = 'vendor_frontend/';
 
 var paths = {
     stylesheets : asset + 'scss/**/*.scss',
     javascripts : asset + 'js/**/*.js',
     images      : [asset + 'img/**/*.png', asset + 'img/**/*.jpg',asset + 'img/**/*.gif'],
+    fonts       : [vendor + 'font-awesome/fonts/*.{ttf,woff,eof,svg}', vendor + 'devicons/fonts/*.{ttf,woff,eof,svg}'],
     templates   : view + '**/*.html.twig'
 };
 
@@ -55,6 +57,12 @@ gulp.task('img', function() {
     .pipe(livereload({ auto: false }));
 });
 
+gulp.task('font', function() {
+  return gulp.src(paths.fonts)
+    .pipe(gulp.dest('web/build/font'))
+    .pipe(livereload({ auto: false }));
+});
+
 gulp.task('watch', function() {
   livereload.listen();
   gulp.watch(paths.stylesheets, ['css']);
@@ -63,4 +71,4 @@ gulp.task('watch', function() {
   gulp.watch(paths.templates).on('change', livereload.changed);
 });
 
-gulp.task('default', ['js', 'css', 'img']);
+gulp.task('default', ['js', 'css', 'img', 'font']);
