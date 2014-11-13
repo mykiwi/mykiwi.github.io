@@ -14,8 +14,8 @@ var vendor = 'vendor_frontend/';
 
 var paths = {
     stylesheets : asset + 'scss/**/*.scss',
-    javascripts : asset + 'js/**/*.js',
-    images      : [asset + 'img/**/*.png', asset + 'img/**/*.jpg',asset + 'img/**/*.gif'],
+    javascripts : [vendor + 'jquery/dist/jquery.js', vendor + 'anchorify/src/anchorify.js', vendor + 'ace-builds/src-noconflict/ace.js', asset + 'js/**/*.js'],
+    images      : asset + 'img/**/*.{png,jpg,gif}',
     fonts       : [vendor + 'font-awesome/fonts/*.{ttf,woff,eof,svg}', vendor + 'devicons/fonts/*.{ttf,woff,eof,svg}'],
     templates   : view + '**/*.html.twig'
 };
