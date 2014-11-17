@@ -59,7 +59,7 @@ gulp.task('img', function() {
 
 gulp.task('font', function() {
   return gulp.src(paths.fonts)
-    .pipe(gulp.dest('web/build/font'))
+    .pipe(gulp.dest('web/build/fonts'))
     .pipe(livereload({ auto: false }));
 });
 
