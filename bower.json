@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "authors": ["Romain Gautier <mail@romain.sh>"],
   "license": "MIT",
-  
+
   "dependencies": {
     "knacss": "~3.1.0",
     "devicons": "~1.6.0",
