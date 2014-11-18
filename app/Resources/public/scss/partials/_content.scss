@@ -33,14 +33,145 @@
                 font-weight: 300;
                 font-size: 18px;
             }
+
             time {
                 margin-top: 6px;
                 float:right;
                 text-transform: uppercase;
                 text-align: right;
-                color: $grey;
+                color: $dark-grey;
                 font-size: 12px;
             }
         }
+    }
+}
+
+article {
+    margin: auto;
+    padding-top: 20px;
+
+    h1 {
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-size: 30px;
+        letter-spacing: -2px;
+
+        a.anchor-link {
+            visibility: hidden;
+            font-size: 25px;
+        }
+
+        &:hover {
+            a.anchor-link {
+                visibility: visible;
+                position: relative;
+                left: 10px;
+                text-decoration: none;
+                color: $grey;
+
+                &:hover {
+                    color: $main-blue;
+                }
+            }
+        }
+    }
+
+    .meta {
+        margin-top: -20px;
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+        color: $grey;
+
+        time {
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        a {
+            margin-left: 6px;
+        }
+
+        .fa {
+            font-size: 18px;
+            color: $grey;
+        }
+
+        .hint--bottom:before,
+        .hint--bottom:after {
+            top: 83%;
+            left: 15%;
+        }
+    }
+
+    h2 {
+        margin: auto;
+        padding-top: 20px;
+        width: $size-layout;
+        font-size: 24px;
+
+        a.anchor-link {
+            visibility: hidden;
+            font-size: 19px;
+        }
+
+        &:hover {
+            a.anchor-link {
+                visibility: visible;
+                position: relative;
+                left: 10px;
+                text-decoration: none;
+                color: $grey;
+
+                &:hover {
+                    color: $main-blue;
+                }
+            }
+        }
+    }
+
+    li {
+        font-size: 16px;
+
+        code {
+            color: $dark-blue;
+            font-size: 16px;
+        }
+    }
+
+    p a,
+    li a {
+        color: $main-blue;
+        text-decoration: none;
+
+        &:hover {
+            color: $main-blue;
+            border-bottom: 1px solid white;
+        }
+    }
+
+    p {
+        margin: auto;
+        margin-top: 10px;
+        width: $size-layout;
+        font-size: 16px;
+        text-align: justify;
+        text-justify: inter-word;
+
+        code {
+            border-radius: 3px;
+            background-color: #F7F7F9;
+            border: 1px solid #E1E1E8;
+            font-size: 16px;
+            color: black;
+        }
+    }
+
+    ul {
+        margin: auto;
+        width: $size-layout;
     }
 }

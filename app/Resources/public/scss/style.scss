@@ -1,14 +1,8 @@
 //----------------------------------*\
-// VENDOR
+// BASE
 //----------------------------------*/
 
-@import '../../../../vendor_frontend/knacss/sass/knacss.scss';
-
-//----------------------------------*\
-// FONTS
-//----------------------------------*/
-@import '../../../../vendor_frontend/font-awesome/scss/font-awesome.scss';
-@import '../../../../vendor_frontend/devicons/css/devicons.scss';
+@import 'external/_knacss.scss';
 
 //----------------------------------*\
 // PARTIALS
@@ -20,3 +14,12 @@
 @import 'partials/_banner.scss';
 @import 'partials/_content.scss';
 @import 'partials/_footer.scss';
+
+//----------------------------------*\
+// VENDOR
+//----------------------------------*/
+
+@import 'external/_hint.scss';
+@import 'external/_disqus.scss';
+@import 'external/_font-awesome.scss';
+@import 'external/_devicons.scss';
