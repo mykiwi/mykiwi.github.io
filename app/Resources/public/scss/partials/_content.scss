@@ -12,35 +12,38 @@
         text-transform: uppercase;
     }
 
-    .content {
-        margin-left: 13px;
+    ul {
+        list-style-type: none;
+        padding-left: 0px;
+        font-size: 12px;
 
-        a {
-            display: block;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            width: 100%;
-            height: 40px;
-            clear: both;
-
-            h3 {
-                display: inline;
-                margin-bottom: 0px;
-                float:left;
-                color: $dark-blue;
-                font-family: 'Open Sans', sans-serif;
-                font-style: normal;
-                font-weight: 300;
-                font-size: 18px;
-            }
+        li {
+            font-family: Monaco, "Courier New", monospace;
+            color: $dark-grey;
 
             time {
-                margin-top: 6px;
-                float:right;
-                text-transform: uppercase;
-                text-align: right;
-                color: $dark-grey;
-                font-size: 12px;
+                color: $grey;
+            }
+
+            a {
+                text-decoration: none;
+                color: $dark-blue;
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                h3 {
+                    display: inline;
+                    color: $main-blue;
+                    font-family: 'Open Sans', sans-serif;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                }
+
+                &:visited h3 {
+                    color: $dark-blue;
+                }
             }
         }
     }
