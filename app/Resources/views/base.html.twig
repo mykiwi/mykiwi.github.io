@@ -14,19 +14,20 @@
     {% block css %}
         <link rel="stylesheet" type="text/css" href="{{ asset('build/all.css') }}" />
     {% endblock %}
+    {% block js_head %}
+        <script src="{{ asset('build/all.min.js') }}"></script>
+    {% endblock %}
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    {% block header %}
+    {% block header -%}
         {% include '_header.html.twig' %}
-    {% endblock %}
-    {% block banner %}
+    {%- endblock %}
+    {% block banner -%}
         {% include '_banner.html.twig' %}
-    {% endblock %}
-    {% block content %}
-        {% include '_content.html.twig' %}
-    {% endblock %}
+    {% endblock -%}
+    {% block content '' %}
     {% include '_footer.html.twig' %}
 
     {% block js %}
