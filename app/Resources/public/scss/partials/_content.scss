@@ -52,6 +52,9 @@
 article {
     margin: auto;
     padding-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
 
     h1 {
         text-align: center;
@@ -59,17 +62,17 @@ article {
         font-style: normal;
         font-size: 30px;
         letter-spacing: -2px;
+        font-weight: 300;
+        color: $main-blue;
 
         a.anchor-link {
-            visibility: hidden;
+            display: none;
             font-size: 25px;
         }
 
         &:hover {
             a.anchor-link {
-                visibility: visible;
-                position: relative;
-                left: 10px;
+                display: block;
                 text-decoration: none;
                 color: $grey;
 
@@ -96,11 +99,12 @@ article {
 
         a {
             margin-left: 6px;
-        }
-
-        .fa {
             font-size: 18px;
             color: $grey;
+
+            &:hover i {
+                color: $main-blue;
+            }
         }
 
         .hint--bottom:before,
@@ -115,25 +119,7 @@ article {
         padding-top: 20px;
         width: $size-layout;
         font-size: 24px;
-
-        a.anchor-link {
-            visibility: hidden;
-            font-size: 19px;
-        }
-
-        &:hover {
-            a.anchor-link {
-                visibility: visible;
-                position: relative;
-                left: 10px;
-                text-decoration: none;
-                color: $grey;
-
-                &:hover {
-                    color: $main-blue;
-                }
-            }
-        }
+        font-weight: 300;
     }
 
     li {
@@ -152,7 +138,11 @@ article {
 
         &:hover {
             color: $main-blue;
-            border-bottom: 1px solid white;
+            text-decoration: underline;
+        }
+
+        &:visited {
+            color: $dark-blue;
         }
     }
 
@@ -164,12 +154,20 @@ article {
         text-align: justify;
         text-justify: inter-word;
 
+        a code {
+            color: $main-blue;
+        }
+        a:visited code {
+            color: $dark-blue;
+        }
+
         code {
             border-radius: 3px;
             background-color: #F7F7F9;
             border: 1px solid #E1E1E8;
-            font-size: 16px;
-            color: black;
+            font-size: 12px;
+            font-family: Monaco, "Courier New", monospace;
+            color: $dark-grey;
         }
     }
 
