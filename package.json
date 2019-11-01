@@ -4,7 +4,7 @@
   "author": "Romain  Gautier <mail@romain.sh>",
   "license": "MIT",
   "dependencies": {
-    "clean-css": "^2.2.18",
+    "clean-css": "^4.2.1",
     "del": "^0.1.3",
     "gulp-concat": "^2.4.1",
     "gulp-imagemin": "^1.2.1",
