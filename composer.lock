@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "hash": "42e49e7126e996bc436b68b41cd0a1fb",
+    "content-hash": "24646f311cb10c76a644cd7a4f2a30df",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -72,7 +72,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2014-09-25 16:45:30"
+            "time": "2014-09-25T16:45:30+00:00"
         },
         {
             "name": "doctrine/cache",
@@ -141,7 +141,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2014-09-17 14:24:04"
+            "time": "2014-09-17T14:24:04+00:00"
         },
         {
             "name": "doctrine/collections",
@@ -209,7 +209,7 @@
                 "collections",
                 "iterator"
             ],
-            "time": "2014-02-03 23:07:43"
+            "time": "2014-02-03T23:07:43+00:00"
         },
         {
             "name": "doctrine/common",
@@ -287,7 +287,7 @@
                 "persistence",
                 "spl"
             ],
-            "time": "2014-05-21 19:28:51"
+            "time": "2014-05-21T19:28:51+00:00"
         },
         {
             "name": "doctrine/dbal",
@@ -350,7 +350,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2014-10-16 11:56:49"
+            "time": "2014-10-16T11:56:49+00:00"
         },
         {
             "name": "doctrine/doctrine-bundle",
@@ -422,7 +422,7 @@
                 "orm",
                 "persistence"
             ],
-            "time": "2013-03-25 20:13:59"
+            "time": "2013-03-25T20:13:59+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -486,7 +486,7 @@
                 "singuarlize",
                 "string"
             ],
-            "time": "2013-01-10 21:49:15"
+            "time": "2013-01-10T21:49:15+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -538,7 +538,7 @@
                 "lexer",
                 "parser"
             ],
-            "time": "2013-01-12 18:59:04"
+            "time": "2013-01-12T18:59:04+00:00"
         },
         {
             "name": "doctrine/orm",
@@ -611,21 +611,28 @@
                 "database",
                 "orm"
             ],
-            "time": "2014-10-06 13:22:50"
+            "time": "2014-10-06T13:22:50+00:00"
         },
         {
             "name": "erusev/parsedown",
-            "version": "1.1.1",
+            "version": "1.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/erusev/parsedown.git",
-                "reference": "da5d75e97e1ed19e57bd54fa6cb595a6a0879a67"
+                "reference": "cb17b6477dfff935958ba01325f2e8a2bfa6dab3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/erusev/parsedown/zipball/da5d75e97e1ed19e57bd54fa6cb595a6a0879a67",
-                "reference": "da5d75e97e1ed19e57bd54fa6cb595a6a0879a67",
+                "url": "https://api.github.com/repos/erusev/parsedown/zipball/cb17b6477dfff935958ba01325f2e8a2bfa6dab3",
+                "reference": "cb17b6477dfff935958ba01325f2e8a2bfa6dab3",
                 "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35"
             },
             "type": "library",
             "autoload": {
@@ -650,7 +657,11 @@
                 "markdown",
                 "parser"
             ],
-            "time": "2014-10-29 20:29:46"
+            "support": {
+                "issues": "https://github.com/erusev/parsedown/issues",
+                "source": "https://github.com/erusev/parsedown/tree/1.7.x"
+            },
+            "time": "2019-12-30T22:54:17+00:00"
         },
         {
             "name": "erusev/parsedown-extra",
@@ -694,7 +705,7 @@
                 "parsedown",
                 "parser"
             ],
-            "time": "2014-10-29 01:21:00"
+            "time": "2014-10-29T01:21:00+00:00"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -746,7 +757,7 @@
             "keywords": [
                 "parameters management"
             ],
-            "time": "2013-12-07 10:10:39"
+            "time": "2013-12-07T10:10:39+00:00"
         },
         {
             "name": "jdorn/sql-formatter",
@@ -796,7 +807,7 @@
                 "highlight",
                 "sql"
             ],
-            "time": "2014-01-12 16:20:24"
+            "time": "2014-01-12T16:20:24+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -868,7 +879,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2014-09-30 13:30:58"
+            "time": "2014-09-30T13:30:58+00:00"
         },
         {
             "name": "psr/log",
@@ -906,7 +917,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2012-12-21 11:40:51"
+            "time": "2012-12-21T11:40:51+00:00"
         },
         {
             "name": "sensio/distribution-bundle",
@@ -959,7 +970,7 @@
                 "configuration",
                 "distribution"
             ],
-            "time": "2014-11-03 21:16:34"
+            "time": "2014-11-03T21:16:34+00:00"
         },
         {
             "name": "sensio/framework-extra-bundle",
@@ -1014,7 +1025,7 @@
                 "annotations",
                 "controllers"
             ],
-            "time": "2014-11-10 14:50:31"
+            "time": "2014-11-10T14:50:31+00:00"
         },
         {
             "name": "sensiolabs/security-checker",
@@ -1059,7 +1070,7 @@
                 }
             ],
             "description": "A security checker for your composer.lock",
-            "time": "2014-07-19 10:52:35"
+            "time": "2014-07-19T10:52:35+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1111,7 +1122,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2014-10-04 05:53:18"
+            "time": "2014-10-04T05:53:18+00:00"
         },
         {
             "name": "symfony/monolog-bundle",
@@ -1170,7 +1181,7 @@
                 "log",
                 "logging"
             ],
-            "time": "2014-07-21 00:36:06"
+            "time": "2014-07-21T00:36:06+00:00"
         },
         {
             "name": "symfony/swiftmailer-bundle",
@@ -1227,7 +1238,7 @@
             ],
             "description": "Symfony SwiftmailerBundle",
             "homepage": "http://symfony.com",
-            "time": "2014-04-05 17:15:52"
+            "time": "2014-04-05T17:15:52+00:00"
         },
         {
             "name": "symfony/symfony",
@@ -1343,7 +1354,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2014-11-03 20:15:26"
+            "time": "2014-11-03T20:15:26+00:00"
         },
         {
             "name": "twig/extensions",
@@ -1395,7 +1406,7 @@
                 "i18n",
                 "text"
             ],
-            "time": "2014-10-30 14:30:03"
+            "time": "2014-10-30T14:30:03+00:00"
         },
         {
             "name": "twig/twig",
@@ -1452,7 +1463,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2014-10-17 12:53:44"
+            "time": "2014-10-17T12:53:44+00:00"
         }
     ],
     "packages-dev": [
@@ -1502,7 +1513,7 @@
                 }
             ],
             "description": "This bundle generates code for you",
-            "time": "2014-09-22 14:56:14"
+            "time": "2014-09-22T14:56:14+00:00"
         }
     ],
     "aliases": [],
@@ -1511,8 +1522,10 @@
         "symfony/symfony": 10
     },
     "prefer-stable": false,
+    "prefer-lowest": false,
     "platform": {
         "php": ">=5.3.3"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
 }
